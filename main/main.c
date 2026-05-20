@@ -52,7 +52,7 @@ static void vConsumerTask(void *pvParameters);
 static void vProducerTask(void *pvParameters)
 {
     uint32_t ulCounter = 0U;
-    BaseType_t xStatus = pdFAIL;
+    BaseType_t xStatus;
 
     (void)pvParameters; /* unused */
 
@@ -75,7 +75,7 @@ static void vProducerTask(void *pvParameters)
 static void vConsumerTask(void *pvParameters)
 {
     uint32_t ulReceived = 0U;
-    BaseType_t xStatus  = pdFAIL;
+    BaseType_t xStatus;
 
     (void)pvParameters; /* unused */
 
